@@ -405,15 +405,13 @@
       font-size: 9px;
     } 
 
-    .details-container
+    .details-container,
+    .keeps-icon
     {
-      padding: 10px;
+      margin: 10px;
     }
     .quick-links{
-      padding-left: -20px;
-    }
-    .keeps-icon{
-      padding: 10px;
+      margin-left: -25px;
     }
   }
     
