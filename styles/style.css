@@ -384,10 +384,7 @@
       width: 100%;
     }
 
-    .details-container
-    {
-      margin: 30px;
-    }
+    
 
     .right-container{
       width: 30%;
@@ -407,19 +404,17 @@
 
       font-size: 9px;
     } 
+
+    .details-container
+    {
+      padding: 10px;
+    }
     .quick-links{
-      margin-left: -10px;
+      padding-left: -20px;
     }
     .keeps-icon{
-      margin: 30px;
+      padding: 10px;
     }
-
-
-
-   
-
-
-   
   }
     
 
