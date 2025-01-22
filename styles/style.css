@@ -72,7 +72,7 @@
   .btn{
     position: absolute;
     font-weight: 500;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #FFFFFF;
     border-radius: 16px;
     border: none;
@@ -89,6 +89,7 @@
     font-weight: 700;
     font-size: 2.5rem;
     text-align: center;
+    
   }
   .card-title{
     font-weight: 700;
@@ -105,6 +106,7 @@
     margin: 0 auto;
     gap: 165px;
   }
+  
 
   .logo-section{
      align-items: center;
@@ -131,17 +133,20 @@
     font-weight: 700;
   }
 
+  .menu-icon{
+    display: none;
+  }
+
  
 
   /* banner styles */
 
    .banner{
     max-width: 1032px;
-    height: 575px;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    gap: 44px;
+    margin: 0 auto 40px;
+    gap: 40px;
    }
 
   .banner-heading{
@@ -162,7 +167,8 @@
     flex-direction: column;
   }
   .cards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 1032px;
     margin: 60px auto;
     gap: 24px;
@@ -193,7 +199,7 @@
   }
 
   .arrow{
-    margin: 0 auto 60px;
+    margin: 0 auto 20px;
   }
 
   /* story section styles */
@@ -207,13 +213,13 @@
 
   .stories{
     width: 1032px;
-    margin: 60px auto;
+    margin: 40px auto 60px;
     gap: 16px;
   }
 
   .story-one{
     width: 480px;
-    height: 551px;
+    height: 560px;
     border-radius: 16px;
     background: rgb(255, 255, 255);
   }
@@ -243,7 +249,7 @@
 
   .story{
     width: 258px;
-    height: 267px;
+    height: 270px;
     border-radius: 16px;
     background: rgb(255, 255, 255);
   }
@@ -257,7 +263,7 @@
     font-weight: 700px;
     font-size: 0.94rem;
     color: #111111;
-    padding: 20px 30px;
+    padding: 20px;
 
   }
 
@@ -267,7 +273,6 @@
 
 /* footer styles */
   .footer-section{
-    height: 461px;
     background: #01ACFD;
   }
 
@@ -278,7 +283,7 @@
     margin: 0 auto;
     color: #FFFFFF;
     justify-content: space-between;
-    padding-top: 109px;
+    padding: 60px 0px;
   }
 
   
@@ -322,6 +327,100 @@
     font-size: 1.4rem;
   }
   
+
+  /* responsive styles */
+
+  @media screen and (max-width:390px) {    
+    nav{
+       width: 100%;
+       border: 0.5px solid rgb(254, 163, 1);
+       padding: 10px 0;
+       justify-content: space-between;
+    }
+
+    .brand, 
+    .navbar, 
+    .btn-container,
+    .story-one,
+    .arrow
+    {
+      display: none;
+    }
+
+    .menu-icon{
+      display: block;
+    }
+
+    .banner{
+      flex-direction: column-reverse;
+    }
+
+    .banner img {
+      width: 100%
+    }
+
+    .banner-heading{
+      font-size: 32px;
+    }
+
+    .banner-content{
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+    }
+    .cards{
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .inner-container
+    {
+      flex-direction: column;
+    }
+
+    .section-title{
+      font-size: 26px;
+    }
+
+    .cards{
+      width: 100%;
+    }
+
+    .details-container
+    {
+      margin: 30px;
+    }
+
+    .right-container{
+      width: 33%;
+      
+    }
+
+    .story{
+      width: 100%;
+      
+    }
+
+    .story img{
+      width: 100%;
+    }
+
+    .btn{
+
+      font-size: 9px;
+    } 
+    .quick-links{
+      margin-left: -10px;
+    }
+    .keeps-icon{
+      margin: 30px;
+    }
+
+
+
+   
+
+
+   
+  }
     
 
 
